@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.backup.dev_portfolio.MainActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="375dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="@color/colorWebsiteTab"
+        app:cardElevation="7dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/davinci"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/devName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/overpass_thin"
+                android:text="Daniel Krusch"
+                android:textColor="?attr/colorButtonNormal"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/devProfession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/devName"
+                android:layout_alignStart="@+id/devName"
+                android:layout_below="@+id/devName"
+                android:layout_marginLeft="2dp"
+                android:text="Developer"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="300dp"
+        android:layout_height="53dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="115dp"
+        android:visibility="visible"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@android:drawable/ic_menu_call"
+            android:textColor="@color/colorAccent"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent"
+                android:onClick="onClick"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@android:drawable/ic_menu_call" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/imageView"
+                android:layout_centerHorizontal="true"
+                android:text="Contact Daniel"
+                android:textColor="@color/colorAccent" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cardView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayoutId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark">
+
+
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="384dp"
+            android:layout_height="283dp"
+            android:layout_above="@+id/tabLayoutId"
+            android:layout_marginTop="46dp"
+            tools:layout_editor_absoluteX="-143dp"
+            tools:layout_editor_absoluteY="92dp">
+
+        </android.support.v4.view.ViewPager>
+
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

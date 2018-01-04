@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">dev_portfolio</string>
+
+    <string name="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non ante at enim auctor viverra eu nec libero. Sed tristique sollicitudin dui,
+        quis molestie purus fermentum id. Sed ornare pharetra sapien, sed suscipit quam tempor id. Fusce odio arcu, efficitur id turpis ut, congue sodales libero. In
+        dignissim non leo quis efficitur. Aenean molestie tincidunt enim, ut vestibulum mauris porta ut. Curabitur id fringilla lectus, vitae vehicula urna. Sed venenatis
+        sodales dui vel congue. Aliquam eu lorem vestibulum ante ultrices interdum sed eu eros. Praesent non mollis diam. Nulla eu tellus massa. Nulla blandit magna
+        efficitur magna laoreet, a dictum massa ullamcorper.</string>
+
+    <string name="work">Ut id commodo quam, quis luctus turpis. Proin cursus suscipit purus et fermentum. In mattis, dolor nec vestibulum euismod, enim nisl pretium augue, vitae ultrices metus felis vitae
+        ligula. Sed aliquam et turpis et vulputate. Aenean semper ligula sed lacus aliquet, a dignissim augue maximus. Quisque pellentesque, arcu non consectetur fringilla, metus tellus
+        pellentesque nisl, vitae rhoncus odio urna ut magna. Quisque tempus, nisl id semper feugiat, tortor mauris hendrerit nulla, quis sodales ipsum erat eu mi. Ut metus justo, dignissim
+        mollis velit et, congue consectetur lorem. Quisque facilisis laoreet nibh nec aliquam. In at odio tincidunt, fermentum odio a, vestibulum libero. Nullam sagittis ante sit amet
+        mollis maximus. Donec eget augue nunc. Morbi tortor ipsum, feugiat a lacus et, viverra dignissim sem.</string>
+
+    <string name="education">* Mauris commodo: arcu sit amet nulla iaculis quis accumsan nulla commodo. "\n" * Integer: vitae ligula orci. "\n" * Quisque tempus: quam eu ornare congue, enim est scelerisque
+        ipsum. "\n" * Suspendisse viverra sodales purus vitae cursus. </string>
+
+    <string name="contact"></string>
+</resources>
