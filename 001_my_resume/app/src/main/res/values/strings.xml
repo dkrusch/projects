@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Resume</string>
+    <string name="title_activity_work_history">WorkHistory</string>
+    <string name="title_activity_education_history">EducationHistory</string>
+</resources>
