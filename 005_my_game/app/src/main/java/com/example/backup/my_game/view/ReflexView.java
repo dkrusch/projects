@@ -37,6 +37,7 @@ import java.util.concurrent.ConcurrentLinkedDeque;
 public class ReflexView extends View
 {
     public static final int INITIAL_ANIMATION_DURATION = 6000; //6 SECOND
+    //assuming your Layout is named linearlayout1:
     public static final Random random = new Random();
     public static final int SPOT_DIAMETER = 200;
     public static final float SCALE_X = 0.25f;
@@ -302,6 +303,31 @@ public class ReflexView extends View
         // increment level if player touched 10 spots in the current level
         if (spotsTouched % NEW_LEVEL == 0) {
             ++level; // increment the level
+            int bgNum = random.nextInt(6) + 1;
+            if (bgNum == 1)
+            {
+                relativeLayout.setBackgroundResource(R.drawable.material_01);
+            }
+            if (bgNum == 2)
+            {
+                relativeLayout.setBackgroundResource(R.drawable.material_02);
+            }
+            if (bgNum == 3)
+            {
+                relativeLayout.setBackgroundResource(R.drawable.material_03);
+            }
+            if (bgNum == 4)
+            {
+                relativeLayout.setBackgroundResource(R.drawable.material_04);
+            }
+            if (bgNum == 5)
+            {
+                relativeLayout.setBackgroundResource(R.drawable.material_05);
+            }
+            if (bgNum == 6)
+            {
+                relativeLayout.setBackgroundResource(R.drawable.material_06);
+            }
             animationTime *= 0.95; // make game 5% faster than prior level
 
             // if the maximum number of lives has not been reached
@@ -352,6 +378,7 @@ public class ReflexView extends View
             AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
             builder.setTitle("Game Over");
             builder.setMessage("Score: " + score);
+            builder.setCancelable(false);
             builder.setPositiveButton("Reset", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {

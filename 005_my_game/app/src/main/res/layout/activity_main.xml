@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/relativeLayout"
     tools:context="com.example.backup.my_game.MainActivity"
-    android:background="@drawable/material">
+    android:background="@drawable/material_01">
 
     <TextView
         android:id="@+id/txtHighScore"
