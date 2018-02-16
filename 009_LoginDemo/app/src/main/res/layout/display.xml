@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtEmail"
+        android:layout_alignEnd="@+id/txtEmail"
+        android:layout_alignRight="@+id/txtEmail"
+        android:text="Username"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="170dp" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="59dp"
+        android:layout_height="21dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Email"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="189dp" />
+</RelativeLayout>
